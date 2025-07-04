@@ -27,15 +27,24 @@ import products from '@/data/products.json'
 
 const router = useRouter()
 
-// const getImageUrl = (filename) => `/images/${filename}` 
+const getImageUrl = (filename) => `/images/${filename}` 
 
-const getImageUrl = (filename) => {
-  return new URL(`../assets/${filename}`, import.meta.url).href
-}
+// const getImageUrl = (filename) => {
+//   return new URL(`../assets/${filename}`, import.meta.url).href
+// }
 
 
 const customizeProduct = (productId) => {
-  router.push({ name: 'DesignStudio', query: { id: productId } })
+  const product = products.find(p => p.id === productId)
+  if (product) {
+    router.push({
+      name: 'DesignStudio',
+      query: {
+        id: product.id,
+        image: product.image
+      }
+    })
+  }
 }
 
 </script>
