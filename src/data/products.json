@@ -1,9 +1,8 @@
 [
-    { "id": 1, "image": "t-shirt.png" },
-    { "id": 2, "image": "hoodie.png" },
-    { "id": 3, "image": "pant.png" },
-    { "id": 4, "image": "tshirt.png" },
-    { "id": 5, "image": "bag.jpg" }
+    { "id": 1, "image": "hoodie.png" },
+    { "id": 2, "image": "pant.png" },
+    { "id": 3, "image": "tshirt.png" },
+    { "id": 4, "image": "bag.jpg" }
    
   ]
   
